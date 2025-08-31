@@ -1,6 +1,6 @@
 <template>
     <div>  
-      <LoadingIndicator v-if="isSearching" :text="Searching by '${searchQuery}'..." />
+      <LoadingIndicator v-if="isSearching" :text="'Searching by \'' + searchQuery + '\'...'" />
       <div v-if="data && data.length > 0 && !isSearching && query">
         <div
           class="grid grid-flow-row grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
@@ -13,8 +13,8 @@
         </div>
         <Pagination
           :total-pages="totalPages"
-          :path="/search/${searchQuery}/"
-          :current-page="+currentPage"
+          :path="'/search/' + searchQuery + '/'"
+          :current-page="currentPage"
         ></Pagination>
       </div>
       <div
@@ -29,4 +29,21 @@
         </div>
       </div>
     </div>
-  </template><p></p>
+    </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        isSearching: false,
+        // Add other properties like searchQuery, data, query, totalPages, currentPage as needed
+        searchQuery: '',
+        data: [],
+        query: '',
+        totalPages: 1,
+        currentPage: 1
+      };
+    },
+    // Add methods, computed, and lifecycle hooks as needed
+  };
+  </script>

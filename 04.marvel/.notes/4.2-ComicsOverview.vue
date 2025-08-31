@@ -3,11 +3,11 @@ import { ref, onMounted } from "vue";
 import type { Ref } from "vue";
 import { useRoute } from "vue-router";
 
-import { useComics } from "@/composables/marvelApi";
-import type { Comic } from "@/types/marvel";
+import { useComics } from "../src/composables/marvelApi";
+import type { Comic } from "../src/types/marvel";
 
-import LoadingIndicator from "./LoadingIndicator.vue";
-import ComicCard from "./ComicCard.vue";
+import LoadingIndicator from "../src/components/LoadingIndicator.vue";
+import ComicCard from "../src/components/ComicCard.vue";
 
 const route = useRoute();
 

@@ -1,10 +1,19 @@
 
-import { Path } from '@/types/marvel'
-import type { Comics, Characters } from '@/types/marvel'
+import { Path } from '../src/types/marvel'
+import type { Comics, Characters } from '../src/types/marvel'
 
-const apiKey = import.meta.env.VITE_APP_MARVEL_API_PUBLIC;
-const MARVEL_API = //gateway.marvel.com/v1/public/
-const API_SIGN = apikey=${apiKey}
+// Add this declaration for Vite env support
+interface ImportMetaEnv {
+  VITE_APP_MARVEL_API_PUBLIC: string;
+}
+
+interface ImportMeta {
+  env: ImportMetaEnv;
+}
+
+const marvelApiKey = import.meta.env.VITE_APP_MARVEL_API_PUBLIC;
+const MARVEL_API = 'https://gateway.marvel.com/v1/public';
+const API_SIGN = `apikey=${marvelApiKey}`;
 const ITEMS_PER_PAGE = 20;
 
 interface ApiOptions {
@@ -21,20 +30,20 @@ export const useMarvelAPI = async (path: Path, options: ApiOptions): Promise<Com
 }
 
 const getPagination = (page?: number): string => {
-    return page ? &offset=${page * ITEMS_PER_PAGE} : ''
+    return page ? `&offset=${page * ITEMS_PER_PAGE}` : '';
 }
 
 const getQuery = (query?: string): string => {
-    return query ? &${query} : ''
+    return query ? `&${query}` : '';
 }
 
 const getRequestURI = (path: Path, query: string, pagination: string): string => {
-    const apiPath = ${MARVEL_API}/${path};
-    return ${apiPath}?${API_SIGN}${query}${pagination};
+    const apiPath = `${MARVEL_API}/${path}`;
+    return `${apiPath}?${API_SIGN}${query}${pagination}`;
 }
 
 export const useFetch = async (requestURI: string): Promise<Comics | Characters> => {
   const res = await fetch(requestURI);
   const jsonRes = await res.json();
   return jsonRes.data as Comics | Characters;
-}p>
+}
