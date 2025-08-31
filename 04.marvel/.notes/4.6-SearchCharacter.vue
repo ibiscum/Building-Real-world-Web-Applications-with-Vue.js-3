@@ -2,7 +2,7 @@
 import { ref } from "vue";
 import type { Ref } from "vue";
 
-import { useCharacterSearch } from "@/composables/marvelApi";
+import { useCharacterSearch } from "../src/composables/marvelApi";
 import type { Character } from "@/types/marvel";
 
 import LoadingIndicator from "./LoadingIndicator.vue";

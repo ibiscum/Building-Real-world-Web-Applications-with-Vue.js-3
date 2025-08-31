@@ -1,8 +1,17 @@
-import type { SearchRecipe, Recipe } from '@/types/spoonacular'
+import type { SearchRecipe, Recipe } from '../src/types/spoonacular'
+
+// Add type definitions for ImportMetaEnv and ImportMeta
+interface ImportMetaEnv {
+    VITE_APP_SPOONACULAR_API: string;
+}
+
+interface ImportMeta {
+    env: ImportMetaEnv;
+}
 
 const apiKey = import.meta.env.VITE_APP_SPOONACULAR_API;
-const RECIPE_API = https://api.spoonacular.com
-const API_SIGN = apiKey=${apiKey}
+const RECIPE_API = 'https://api.spoonacular.com';
+const API_SIGN = `apiKey=${apiKey}`;
 
 interface ApiOptions {
     query?: string;
@@ -17,12 +26,12 @@ export const useRecipeAPI = async (path: string, options?: ApiOptions): Promise<
 }
 
 const getQuery = (query?: string): string => {
-    return query ? &query=${query} : ''
+    return query ? `&query=${query}` : ''
 }
 
 const getRequestURI = (path: string, query?: string): string => {
-    const apiPath = ${RECIPE_API}/${path};
-    return ${apiPath}?${API_SIGN}${query};
+    const apiPath = `${RECIPE_API}/${path}`;
+    return `${apiPath}?${API_SIGN}${query}`;
 }
 
 export const useFetch = async (requestURI: string): Promise<any> => {

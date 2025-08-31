@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const emits = defineEmits(["openPreview"]);
 
-import type { Recipe } from "@/types/spoonacular";
+import type { Recipe } from "../src/types/spoonacular";
 interface RecipeList extends Recipe {
   date: Date;
 }

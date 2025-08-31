@@ -24,7 +24,7 @@ const generateCards = (startDate: Date, numberOfDays: number): Card[] => {
 
   for (let i = 0; i < numberOfDays; i++) {
     const date = new Date(currentDate.getTime());
-    const content = Card ${i + 1};
+    const content = `Card ${i + 1}`;
     cards.push({ date, content });
     currentDate.setDate(currentDate.getDate() + 1);
   }
