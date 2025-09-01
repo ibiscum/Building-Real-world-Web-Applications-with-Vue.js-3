@@ -2,7 +2,7 @@
 import { ref, computed } from "vue";
 import type { Ref } from "vue";
 import type { Routine } from "@/types/fitness";
-import { VDatePicker } from "vuetify/labs/VDatePicker";
+import { VDatePicker } from "vuetify/components";
 
 import { useFitnessStore } from "@/store/fitness";
 const fitnessStore = useFitnessStore();
@@ -83,7 +83,7 @@ const saveWorkout = () => {
         ></v-date-picker>
       </v-dialog>
     </v-row>
-    
+
     <exercise-grouping
         :key="index"
         v-for="(row, index) in routines"

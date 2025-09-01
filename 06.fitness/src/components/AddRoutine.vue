@@ -8,8 +8,8 @@ const emit = defineEmits(["add"]);
 
 const routine: Ref<Routine> = ref({ exercise: "", routines: [] });
 const exercise = ref(null);
-const weight: Ref<Number> = ref(0);
-const repetitions: Ref<Number> = ref(0);
+const weight: Ref<number> = ref(0);
+const repetitions: Ref<number> = ref(0);
 
 const panel = ref([0]);
 

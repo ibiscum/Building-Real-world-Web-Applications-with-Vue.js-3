@@ -142,7 +142,7 @@ export const useFitnessStore = defineStore('fitness', () => {
                   id, created_at,
                   sets (
                     workout_id, weight, repetitions,
-                    exercises ( name, color ) 
+                    exercises ( name, color )
                   )
                 `)
                 .eq('profile_id', id)

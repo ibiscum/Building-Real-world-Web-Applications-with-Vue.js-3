@@ -42,7 +42,7 @@ export const useUserStore = defineStore('user', () => {
         .from('profiles')
         .upsert({ id: session.user.id, email_address: session.user.email, updated_at: new Date() })
         .select()
-        
+
         if (error) throw error;
       } catch (error: any) {
       console.error(error.message);
