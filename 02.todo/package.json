@@ -12,7 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "vue": "^3.5.20"
+    "vue": "^3.5.22"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.12.0",
