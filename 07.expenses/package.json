@@ -14,29 +14,27 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.17.0",
-    "@supabase/supabase-js": "^2.56.1",
+    "@supabase/supabase-js": "^2.76.1",
     "pinia": "^3.0.3",
-    "quasar": "^2.18.2",
-    "vue": "^3.5.20",
-    "vue-router": "^4.5.1"
+    "quasar": "^2.18.5",
+    "vue": "^3.5.22",
+    "vue-router": "^4.6.3"
   },
   "devDependencies": {
-    "@quasar/app-vite": "^2.3.0",
+    "@quasar/app-vite": "^2.4.0",
     "@quasar/icongenie": "^4.0.0",
-    "@types/node": "^24.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.41.0",
-    "@typescript-eslint/parser": "^8.41.0",
+    "@types/node": "^24.9.1",
     "autoprefixer": "^10.4.21",
-    "electron": "^26.1.0",
-    "electron-packager": "^17.1.1",
-    "eslint": "^9.34.0",
+    "electron": "^38.4.0",
+    "electron-packager": "^17.1.2",
+    "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-vue": "^10.4.0",
+    "eslint-plugin-vue": "^10.5.1",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "engines": {
-    "node": "^22",
+    "node": ">= 22",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
   }
