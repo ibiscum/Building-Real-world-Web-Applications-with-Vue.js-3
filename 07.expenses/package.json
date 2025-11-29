@@ -1,13 +1,13 @@
 {
-  "name": "packt-expense-tracker",
+  "name": "07.expenses",
   "version": "0.0.1",
   "description": "A multi platform expense tracker built with Vue.js & Quasar",
   "productName": "Packt Expense Tracker",
   "author": "Joran Quinten <joran@joranquinten.nl>",
   "private": true,
+  "type": "module",
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.vue ./",
-    "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
+    "lint": "eslint --fix",
     "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
     "build": "quasar build"

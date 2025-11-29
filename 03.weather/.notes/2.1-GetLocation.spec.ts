@@ -1,6 +1,6 @@
 import { vi } from 'vitest'
 import { shallowMount } from "@vue/test-utils";
-import GetLocation from "./GetLocation.vue";
+import GetLocation from "../src/components/GetLocation.vue";
 
 describe("GetLocation", () => {
     it("should render the component without crashing", async (): Promise<void> => {

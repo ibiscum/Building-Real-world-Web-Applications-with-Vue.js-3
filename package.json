@@ -8,9 +8,19 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "lint": "eslint --fix"
   },
+  "workspaces": [
+    "02.todo",
+    "03.weather",
+    "04.marvel",
+    "05.ecommerce",
+    "06.blog",
+    "07.expenses",
+    "08.quiz",
+    "09.tensorflow",
+    "10.portfolio"
+  ],
   "dependencies": {
     "vue": "^3.5.22"
   },
@@ -31,16 +41,5 @@
     "typescript-eslint": "^8.48.0",
     "vite": "^7.1.12",
     "vue-tsc": "^3.1.2"
-  },
-  "workspaces": [
-    "02.todo",
-    "03.weather",
-    "04.marvel",
-    "05.ecommerce",
-    "06.blog",
-    "07.recipes",
-    "08.quiz",
-    "09.tensorflow",
-    "10.portfolio"
-  ]
+  }
 }
