@@ -1,5 +1,5 @@
 {
-  "name": "todo-list-app",
+  "name": "02.todo",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,7 @@
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "lint": "eslint --fix"
   },
   "dependencies": {
     "vue": "^3.5.22"
@@ -24,7 +23,6 @@
     "eslint": "^9.39.0",
     "eslint-plugin-vue": "^10.5.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.6.2",
     "typescript": "~5.9.3",
     "vite": "^7.1.12",
     "vue-tsc": "^3.1.2"
