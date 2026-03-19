@@ -1,11 +1,19 @@
 packages:
-  - '02.todo'
-  - '03.weather'
-  - '04.marvel'
-  - '05.mealplanner'
-  - '06.fitness'
-  - '07.expenses'
-  - '08.quiz'
-  - '09.tensorflow'
-  - '10.portfolio'
-  
+  - 02.todo
+  - 03.weather
+  - 04.marvel
+  - 05.mealplanner
+  - 06.fitness
+  - 07.expenses
+  - 08.quiz
+  - 09.tensorflow
+  - 10.portfolio
+
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - core-js
+  - electron
+  - esbuild
+  - pngquant-bin
+  - sharp
+  - vue-demi
