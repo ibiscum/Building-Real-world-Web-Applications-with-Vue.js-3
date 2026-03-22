@@ -15,7 +15,7 @@
     "@tensorflow/tfjs-backend-webgl": "^4.22.0",
     "@vueuse/core": "^14.2.1",
     "core-js": "^3.49.0",
-    "eslint": "^10.0.3",
+    "eslint": "^10.1.0",
     "pinia": "^3.0.4",
     "roboto-fontface": "^0.10.0",
     "vue": "^3.5.30",
