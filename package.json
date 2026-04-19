@@ -10,17 +10,6 @@
     "type-check": "vue-tsc --noEmit",
     "lint": "eslint --fix"
   },
-  "workspaces": [
-    "02.todo",
-    "03.weather",
-    "04.marvel",
-    "05.ecommerce",
-    "06.blog",
-    "07.expenses",
-    "08.quiz",
-    "09.tensorflow",
-    "10.portfolio"
-  ],
   "dependencies": {
     "vue": "^3.5.32"
   },

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all --parallel dev:*",
-    "dev__:client": "cd app && npm run dev:client",
+    "dev:client": "cd app && npm run dev:client",
     "dev:sockets": "nodemon ./sockets/index.ts",
     "dev:server": "cd server && npm run dev",
     "dev:open": "node ./open.mjs"
