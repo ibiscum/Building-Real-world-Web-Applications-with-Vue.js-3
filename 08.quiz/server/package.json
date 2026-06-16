@@ -12,7 +12,7 @@
   "devDependencies": {
     "@invictus.codes/nuxt-vuetify": "^0.3.0",
     "@nuxt/devtools": "latest",
-    "nuxt": "^4.4.6"
+    "nuxt": "^4.4.7"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.11.3",
